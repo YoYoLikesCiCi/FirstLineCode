@@ -13,7 +13,10 @@ import static java.security.AccessController.getContext;
 public class TitleLayout extends LinearLayout {
     public TitleLayout(Context context, AttributeSet attrs){
         super(context,attrs);
+
+        //LayoutInflater 方法可以动态加载一个布局文件，一个参数是要加载的布局，第二个参数是父布局
         LayoutInflater.from(context).inflate(R.layout.title,this);
+
 
         Button titleBack = (Button)findViewById(R.id.title_back);
         Button titleEdit = (Button)findViewById(R.id.title_edit);
